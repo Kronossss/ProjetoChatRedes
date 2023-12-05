@@ -5,7 +5,7 @@ Projeto de Redes I 2023.2
 
 O script servidor.py é a espinha dorsal do sistema de chat, proporcionando uma plataforma robusta para a comunicação entre clientes. Utilizando a biblioteca de sockets e threads em Python, o servidor gerencia conexões simultâneas, salas de chat e operações administrativas.
 
-1. Funcionalidades Principais:
+## 1. Funcionalidades Principais:
 
 * Salas de Chat: O servidor suporta a criação dinâmica de salas, permitindo que usuários ingressem em espaços específicos para interagir entre si.
 
@@ -15,7 +15,7 @@ O script servidor.py é a espinha dorsal do sistema de chat, proporcionando uma 
 
 * Persistência de Dados: O servidor mantém uma lista de apelidos dos clientes e suas respectivas salas, além de registrar usuários banidos em um arquivo "lista-ban.txt" para garantir consistência entre sessões.
 
-2. Fluxo de Execução:
+## 2. Fluxo de Execução:
 
 * Inicialização: O servidor é iniciado, aguardando conexões de clientes na porta especificada (por exemplo, 50000).
 
