@@ -31,7 +31,7 @@ O script servidor.py é a espinha dorsal do sistema de chat, proporcionando uma 
 
 O script cliente.py representa a interface do usuário para interagir com o sistema de chat. Ele permite que usuários escolham um apelido, entrem em uma sala e participem de conversas em tempo real.
 
-1. Funcionalidades Principais:
+## 1. Funcionalidades Principais:
 
 * Conexão ao Servidor: O cliente inicia estabelecendo uma conexão com o servidor, fornecendo um apelido e escolhendo uma sala para participar.
 
