@@ -55,7 +55,7 @@ def receber():
         # Criando o socket
         servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         # Ligando o servidor ao host e a porta
-        servidor.bind(('127.0.0.1', 50000))
+        servidor.bind(('25.1.96.115', 50000))
         # Definindo o limite de conexões
         servidor.listen()
 

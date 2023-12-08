@@ -9,7 +9,7 @@ sala = input('Escolha uma sala: ')
 
 # Conectando com o servidor
 cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-cliente.connect(('127.0.0.1', 50000))
+cliente.connect(('25.1.96.115', 50000))
 
 # Enviando apelido e sala para o servidor
 cliente.send(f'{apelido}@{sala}'.encode('utf-8'))
