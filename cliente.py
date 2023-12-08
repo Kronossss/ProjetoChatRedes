@@ -3,6 +3,8 @@ import threading
 
 # Definindo um apelido e sala
 apelido = input('Escolha um apelido: ')
+if apelido == 'admin':
+    senha = input('Senha de administrador: ')
 sala = input('Escolha uma sala: ')
 
 # Conectando com o servidor

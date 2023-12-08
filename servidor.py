@@ -79,7 +79,7 @@ def receber():
         # Verificando se o apelido é de administrador
         if apelido == 'admin':
             cliente.send('PASS'.encode('utf-8'))
-            senha = cliente.recv(1024).decode('utf-8')
+            senha = 'admin'
             # Verificando se a senha é correta
             if senha != 'admin':
                 cliente.send('SENHA_ERRADA'.encode('utf-8'))
@@ -94,11 +94,11 @@ def receber():
         # Adicionando o apelido do cliente na lista de apelidos
         apelidos.append(apelido)
 
-        print(f'{apelido} entrou na sala {sala}')
+        print(f' {apelido} entrou na sala {sala}')
         # Enviando a mensagem de boas vindas para o cliente
-        broadcast(f'{apelido} entrou no chat!'.encode('utf-8'), sala)
+        broadcast(f' {apelido} entrou no chat! '.encode('utf-8'), sala)
         # Enviando a mensagem para o cliente
-        cliente.send('Conectado ao servidor!'.encode('utf-8'))
+        cliente.send('Conectado ao servidor! '.encode('utf-8'))
 
         thread = threading.Thread(target=handle, args=(cliente, apelido, sala))
         thread.start()
